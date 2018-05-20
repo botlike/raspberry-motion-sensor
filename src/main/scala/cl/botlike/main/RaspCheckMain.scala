@@ -20,7 +20,7 @@ object RaspCheckMain{
     val publicActor = system.actorOf(Props[PublishActor], "publish");
 
     sMotion.addListener(new GpioPinListenerDigital {
-      println("starting sensor listener");
+      println("starting sensor listenerss");
       override def handleGpioPinDigitalStateChangeEvent(event: GpioPinDigitalStateChangeEvent): Unit = {
         event.getState match {
           case PinState.HIGH => {
