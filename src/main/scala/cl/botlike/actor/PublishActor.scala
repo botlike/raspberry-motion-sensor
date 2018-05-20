@@ -31,12 +31,12 @@ class PublishActor extends Actor{
 
     case Motion(true) => {
       println("Moviemiento detectado, enviando requesst");
-      val entityy =  HttpEntity(MediaTypes.`application/json`, jsonRequest);
+      /*val entityy =  HttpEntity(MediaTypes.`application/json`, jsonRequest);
       val req = HttpRequest(HttpMethods.POST,
                             uri = url,
                             headers = hds,
                             entity = entityy);
-      http.singleRequest(request = req);
+      http.singleRequest(request = req);*/
     }
     case _ => println("Error");
   }
